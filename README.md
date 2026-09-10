@@ -17,7 +17,8 @@
 <p align="center">
     <strong>1. FORK REPOSITORY</strong>
   <br>
-    <a href="https://github.com/Dark-Xploit/CypherX/fork" target="_blank">
+    <a href="h
+      https://github.com/Soumik0612/ARCEUS-XD/fork" target="_blank">
         <img alt="Fork Repo" src="https://img.shields.io/badge/Fork%20Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue"/>
     </a>
 </p>
@@ -26,7 +27,7 @@
     <strong>2. SESSION ID & DEPLOYMENTS</strong>
     <br>
     <p align="center">
-  <a href="https://heroku.com/deploy?template=https://github.com/Dark-Xploit/CypherX">
+  <a href="https://heroku.com/deploy?template=https://github.com/Soumik0612/ARCEUS-XD">
     <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" width="200"/>
   </a>
 </p>
