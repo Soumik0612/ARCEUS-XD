@@ -23,7 +23,7 @@ module.exports = {
                 return {
                     vcard: `
 BEGIN:VCARD
-VERSION:3.0
+VERSION:20.0
 FN:${name}
 TEL;waid=${num}:${num}
 END:VCARD
