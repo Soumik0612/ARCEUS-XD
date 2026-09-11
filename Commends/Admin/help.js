@@ -5,16 +5,16 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 ╔═══════════════════╗
-   *🤖 ${settings.botName || 'XPrime-XD'}*  
-   Version: *${settings.version || '3.0.0'}*
-   By ${settings.botOwner || 'Your Soumik'}
+   *🤖 ${settings.botName || 'ARCEUS XD'}*  
+   Version: *${settings.version || '25.0.0'}*
+   By ${settings.botOwner || 'SOUMIK'}
    DEV: ${global.soumik}
 ╚═══════════════════╝
 
-*All Commands:*
+*All MENU:*
 
 ╔═══════════════════╗
-🌐 *General Commands*:
+🌝*General Commands*:
 ║ ➤ .menu
 ║ ➤ .ping
 ║ ➤ .alive
@@ -238,7 +238,7 @@ Join our channel for updates:`;
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363425663050633@newsletter',
-                        newsletterName: 'Xprime XD',
+                        newsletterName: 'ARCEUS XD',
                         serverMessageId: -1
                     }
                 }
@@ -252,7 +252,7 @@ Join our channel for updates:`;
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363425663050633@newsletter',
-                        newsletterName: 'Xprime XD by Your Soumik',
+                        newsletterName: 'ARCEUS XD',
                         serverMessageId: -1
                     } 
                 }
