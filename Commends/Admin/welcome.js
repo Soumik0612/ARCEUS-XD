@@ -8,7 +8,7 @@ module.exports = {
   name: 'welcome',
   aliases: ['welcomeon', 'welcomeoff'],
   category: 'admin',
-  desc: 'Enable/disable welcome messages',
+  desc: 'active/deactive welcome messages',
   usage: 'welcome on/off',
   groupOnly: true,
   adminOnly: true,
@@ -20,7 +20,7 @@ module.exports = {
       
       if (!action || !['on', 'off'].includes(action)) {
         const groupSettings = db.getGroupSettings(groupId);
-        const status = groupSettings.welcome ? '✅ Enabled' : '❌ Disabled';
+        const status = groupSettings.welcome ? '✅ Active' : '❌ Deactive';
         return await sock.sendMessage(groupId, {
           text: `👋 *Welcome Messages*\n\nStatus: ${status}\nMessage: ${groupSettings.welcomeMessage}\n\nUsage: .welcome on/off\n\nTo customize: .setwelcome <message>`
         }, { quoted: msg });
@@ -30,7 +30,7 @@ module.exports = {
       db.updateGroupSettings(groupId, { welcome: enable });
       
       await sock.sendMessage(groupId, {
-        text: `✅ Welcome messages ${enable ? 'enabled' : 'disabled'}!${enable ? '\n\nNew members will now receive welcome messages.' : ''}`
+        text: `✅ Welcome messages ${active ? 'active' : 'deactive'}!${active ? '\n\nNew members will now receive welcome messages.' : ''}`
       }, { quoted: msg });
       
     } catch (error) {
