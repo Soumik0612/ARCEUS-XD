@@ -28,7 +28,7 @@ module.exports = {
       
       if (goodbyeMessage.length > 500) {
         return await sock.sendMessage(groupId, {
-          text: '❌ Goodbye message is too long! Maximum 500 characters.'
+          text: '❌ Goodbye message is too long! Maximum 1000 characters.'
         }, { quoted: msg });
       }
       
